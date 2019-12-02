@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Meta data-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Travel planner - Organise your adventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This website enables you to keep track of your adventures life!">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" media="screen" href="style/reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style/screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+
+
+  <!-- Scripts-->
+  <script src="script/app.js"></script>
+</head>
+
+<body>
+
+  <div class="o-grid u-grid-main-layout">
+    <aside class="c-sidebar">
+      <header class="c-sidebar-header">
+        <img src="favicon-32.png" alt="Important for SEO" title="Hover me" class="c-sidebar-header__image">
+        <h1 class="c-sidebar-header__title">Travel Planner</h1>
+      </header>
+
+      <nav class="c-sidebar-menu">
+        <h4 class="c-menu__title">Choose a region:</h4>
+        <ul class="c-menu__list">
+          <li class="c-menu__item">
+            <button class="c-menu__link js-region-select o-button-reset" data-region="Africa">
+ Africa
+                        </button>
+          </li>
+          <li class="c-menu__item">
+            <button class="c-menu__link js-region-select o-button-reset" data-region="Americas">
+                            Americas
+                        </button>
+          </li>
+          <li class="c-menu__item">
+            <button class="c-menu__link js-region-select o-button-reset" data-region="Asia">
+   Asia
+                        </button>
+          </li>
+          <li class="c-menu__item">
+            <button class="c-menu__link js-region-select o-button-reset" data-region="Europe">
+ Europe
+                        </button>
+          </li>
+          <li class="c-menu__item">
+            <button class="c-menu__link js-region-select o-button-reset" data-region="Oceania">Oceania</button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="c-sidebar-counter">
+        <span class="u-color-alpha js-amount">0</span> / 250
+      </div>
+    </aside>
+
+    <main class="c-content ">
+      <div class="o-grid u-grid-overview js-country-holder">
+      </div>
+      <aside class="c-notifications js-notification-holder">
+        <!-- <div class="c-notification">
+          <h2 class="c-notification__header">You have selected Belgium.</h2>
+          <button class="c-notification__action">undo</button>
+        </div> -->
+      </aside>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
